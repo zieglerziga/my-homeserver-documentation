@@ -17,7 +17,8 @@ How to disable it:
 1. edit the /etc/systemd/logind.conf file with your favourite editor as a root
    Uncomment the line about HandleLidSwitch=suspend and change suspend to ignore.
 3. restart systemd: systemctl restart systemd-logind or you can restart the whole system as well.
- 
+### Change default dashboard port
+from 80 to 8081
 ## Backup plugin
 Backup plugin will create a backup from the system disk
 https://wiki.omv-extras.org/doku.php?id=docs_in_draft:backup-next
@@ -30,4 +31,9 @@ https://bztsrc.gitlab.io/usbimager/
    type fdisk -l and search for your device name /dev/XXXX
    type sudo fsck -f /dev/XXXX and select y for all the questions
 
-   
+## Wireguard
+
+https://wiki.omv-extras.org/doku.php?id=omv7:omv7_plugins:wireguard
+
+## [NGINX revers proxy ](https://nginxproxymanager.com/setup/)
+
